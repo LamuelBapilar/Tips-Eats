@@ -196,8 +196,10 @@ CREATE TABLE Reviews (
     FOREIGN KEY (user_id) REFERENCES Users(user_id) ON DELETE CASCADE
 );
 
-5. SQL Connection
 
-1. On your Project Folder find "/backend/connection.php
+5. On your Project Folder, Open backend/connection.php and change the designated variables to match your local setup:
 
-2. 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "tipseats_db";  // Make sure this matches the database you just created
