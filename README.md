@@ -1,42 +1,58 @@
-# Tips-Eats
+ # 🚀 Tips-Eats Setup Guide (XAMPP + PHP)
+ 
+---
 
-🚀 Tips-Eats Setup Guide (XAMPP + PHP)
+📌 Description
 
-This project uses PHP + MySQL and runs using XAMPP.
+Tips-Eats is a web-based application built using PHP and MySQL that runs locally using XAMPP.
+It includes features such as user accounts, posts, social interactions, products, orders, and reviews.
+
+This setup guide will help you install and run the project on your local machine.
+
+---
 
 📌 Requirements
 
-XAMPP (Apache + MySQL)
+- XAMPP (Apache + MySQL)
 
-Web browser (Chrome, Edge, etc.)
+- Web browser (Chrome, Edge, etc.)
 
-Git (optional)
+- Git (optional)
 
-📥 1. Download / Clone the Project
+---
+
+### 📥 1. Download / Clone the Project
 
 Option 1: Download ZIP
 
-Click Code → Download ZIP in GitHub
+1. Click Code → Download ZIP in GitHub
 
-Extract the folder
+2. Extract the folder
+
+3. Click Code → Download ZIP in GitHub
+
+4. Extract the folder
 
 Option 2: Clone using Git
 
-git clone https://github.com/your-username/tips-eats.git
-📂 2. Move Project to XAMPP Folder
+1. git clone https://github.com/your-username/tips-eats.git
 
-Go to your XAMPP folder:
 
+### 📂 2. Move Project to XAMPP Folder
+
+1. Go to your XAMPP folder:
+```bash
 C:\xampp\htdocs\
+```
 
-Copy your project folder inside htdocs
+2. Copy your project folder inside htdocs
 
-Example:
+Example: C:\xampp\htdocs\tips-eats
 
-C:\xampp\htdocs\tips-eats
-▶️ 3. Start XAMPP Services
 
-Open XAMPP Control Panel
+### ▶️ 3. Start XAMPP Services
+
+1. Open XAMPP Control Panel
 
 Start:
 
@@ -44,18 +60,20 @@ Apache
 
 MySQL
 
-🗄️ 4. Setup Database
+### 🗄️ 4. Setup Database
 
 1. Open your browser and go to:
 
+```bash
 http://localhost/phpmyadmin
+```
 
 2. Click New and create a database (example name: tipseats_db)
 
 3. Click the SQL tab and copy-paste the SQL query below:
 (This will create all tables for the project)
 
-
+```bash
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
@@ -195,11 +213,13 @@ CREATE TABLE Reviews (
     FOREIGN KEY (product_id) REFERENCES Products(product_id) ON DELETE CASCADE,
     FOREIGN KEY (user_id) REFERENCES Users(user_id) ON DELETE CASCADE
 );
-
+```
 
 5. On your Project Folder, Open backend/connection.php and change the designated variables to match your local setup:
 
+```bash
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "tipseats_db";  // Make sure this matches the database you just created
+```
