@@ -14,7 +14,6 @@ For Site Preview: https://drive.google.com/drive/folders/1urXv39s7LgAIx2C4Z-0JFn
 ---
 
 ## 📸 Site Preview
-loginpage
 ![Preview 1](Preview/loginpage.png)
 ![Preview 2](Preview/Homepage.png)
 ![Preview 3](Preview/FriendsSection.png)
