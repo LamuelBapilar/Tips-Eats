@@ -9,6 +9,8 @@ It includes features such as user accounts, posts, social interactions, products
 
 This setup guide will help you install and run the project on your local machine.
 
+For Site Preview: https://drive.google.com/drive/folders/1urXv39s7LgAIx2C4Z-0JFnxCmjamAf8G?usp=sharing
+
 ---
 
 📌 Requirements
