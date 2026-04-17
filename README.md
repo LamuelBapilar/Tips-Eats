@@ -13,6 +13,15 @@ For Site Preview: https://drive.google.com/drive/folders/1urXv39s7LgAIx2C4Z-0JFn
 
 ---
 
+## 📸 Site Preview
+
+![Preview 1](Preview/Homepage.png)
+![Preview 2](Preview/FriendsSection.png)
+![Preview 3](Preview/FollowingSection.png)
+![Preview 4](Preview/MarketplaceSection.png)
+
+
+---
 📌 Requirements
 
 - XAMPP (Apache + MySQL)
